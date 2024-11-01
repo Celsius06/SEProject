@@ -27,7 +27,7 @@ const Header = () => {
               <img src = {logo} alt = ""/>
             </div> */}
             <div className="gif-container">
-              <img src={gifImage} alt="Animated GIF" /> {/* Add the GIF here */}
+              <img src={gifImage} alt="Animated GIF"/> {/* Add the GIF here */}
             </div>
           </div>
         </Row>
