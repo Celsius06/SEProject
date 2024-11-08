@@ -7,6 +7,7 @@ import heroVid from './../assets/images/hero-video.mp4';
 import wordImg from './../assets/images/world.png';
 import Subtitle from '../shared/Subtitle';
 
+import SearchBar from '../styles/SearchBar';
 const Home = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const Home = () => {
                   <img src={wordImg} alt= "" />
                 </div>
                 <h1>
-                  Let's Travel With <span className="highlight">TAB</span>
+                  Explore The World With <span className="highlight">TAB</span>
                 </h1>
                 <p className="hero__description">
                   Explore the world, find new adventures, and make unforgettable memories.
@@ -47,6 +48,7 @@ const Home = () => {
                 <img src = {heroImg02} alt = ""/>
               </div>
             </Col>
+            <SearchBar/>
           </Row>
         </Container>
       </section>
