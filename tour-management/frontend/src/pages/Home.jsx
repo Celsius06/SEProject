@@ -17,7 +17,7 @@ const Home = () => {
             <Col lg = '6'>
               <div className="hero__content">
                 <div className="hero__subtitle d-flex align-items-center">
-                  <Subtitle subtitle="Know Before You Go" />
+                  <Subtitle subtitle="Discover your new adventure" />
                   <img src={wordImg} alt= "" />
                 </div>
                 <h1>

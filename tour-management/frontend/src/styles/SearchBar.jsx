@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import './search-bar.css';
 import { Col, Form, FormGroup } from 'reactstrap';
 
@@ -6,24 +6,45 @@ const SearchBar = () => {
     const locationRef = useRef('')
     const checkInRef = useRef('')
     const checkOutRef = useRef('')
-    const guestSizeRef = useRef(0)
+    const guestSizeRef = useRef(1)
+    const [showGuestAlert, setShowGuestAlert] = useState(false);
+
+    useEffect(() => {
+        if(guestSizeRef.current){
+            guestSizeRef.current.value = 1;
+        }
+    }, []);
     const fields = [
         { label: 'Location', icon: 'ri-map-2-line', type: 'text', placeholder: 'Where are you going?', ref: locationRef },
         { label: 'Check In', icon: 'ri-calendar-line', type: 'date', placeholder: '', ref: checkInRef },
         { label: 'Check Out', icon: 'ri-calendar-line', type: 'date', placeholder: '', ref: checkOutRef },
-        { label: 'Guests', icon: 'ri-group-line', type: 'number', placeholder: '0', guestSizeRef },
+        { label: 'Guests', icon: 'ri-group-line', type: 'number', placeholder: '1', ref: guestSizeRef },
     ];
 
+    const handleGuestChange = (e) => {
+        const value = parseInt(e.target.value);
+        if (isNaN(value) || value < 1) {
+          e.target.value = '1';
+        }
+        setShowGuestAlert(false);
+      };
+      
   
 
     const searchHandler = ()=>{
         const location = locationRef.current.value
         const checkIn =  checkInRef.current.value
         const checkOut = checkOutRef.current.value
-        const guestSize = guestSizeRef.current.value
+        const guestSize = parseInt(guestSizeRef.current.value);
         if(location === '' || checkIn === '' || checkOut === '' || guestSize === ''){
             return alert("Please fill out all fields.");
         }
+        if (!guestSize || guestSize < 1) {
+            setShowGuestAlert(true);
+            guestSizeRef.current.focus();
+            return;
+        }
+        setShowGuestAlert(false);
     }
     return (
         <Col>
@@ -39,7 +60,13 @@ const SearchBar = () => {
                 </span>
                 <div>
                     <h6>{field.label}</h6>
-                    <input type={field.type} placeholder={field.placeholder} ref={field.ref}/>
+                    <input 
+                        type={field.type} 
+                        placeholder={field.placeholder} 
+                        ref={field.ref} 
+                        onChange={field.label === 'Guests' ? handleGuestChange : null}
+                        className= "contact-input"
+                    />
                 </div>
                 </FormGroup>
             
