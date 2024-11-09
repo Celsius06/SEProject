@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Ignore .cache files inside node_modules
+node_modules/.cache/
+
 # npm cache
 .npm/
 
