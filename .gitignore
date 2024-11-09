@@ -4,6 +4,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Ignore .cache files inside node_modules
+node_modules/.cache/
+
+# npm cache
+.npm/
+
+# yarn cache
+.yarn/cache/
+
+
 # Optional npm cache directory
 .npm
 
