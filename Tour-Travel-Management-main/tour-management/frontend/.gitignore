@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# npm cache
+.npm/
+
+# yarn cache
+.yarn/cache/
+
 # testing
 /coverage
 
