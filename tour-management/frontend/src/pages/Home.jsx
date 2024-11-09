@@ -17,7 +17,7 @@ const Home = () => {
             <Col lg = '6'>
               <div className="hero__content">
                 <div className="hero__subtitle d-flex align-items-center">
-                  <Subtitle subtitle="Discover your new adventure" />
+                  <Subtitle subtitle="Discover your new adventure" className="subtitle-gradient" />
                   <img src={wordImg} alt= "" />
                 </div>
                 <h1>
@@ -26,7 +26,7 @@ const Home = () => {
                 <p className="hero__description">
                   Explore the world, find new adventures, and make unforgettable memories.
                 </p>
-                <a href="#cta" className="primary__btn">
+                <a href="#cta" className="primary__btn1">
                   Start Your Journey
                 </a>
               </div>
@@ -49,6 +49,16 @@ const Home = () => {
               </div>
             </Col>
             <SearchBar/>
+          </Row>
+        </Container>
+      </section>
+      {/*Hero section start*/}
+      <section>
+        <Container>
+          <Row>
+            <Col lg = '3'>
+              <h5 className= "services_subtitle"></h5>
+            </Col>
           </Row>
         </Container>
       </section>

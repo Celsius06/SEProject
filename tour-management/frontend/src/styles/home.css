@@ -22,8 +22,8 @@
     margin-bottom: 2rem;
 }
 
-.primary__btn {
-    background: var(--secondary-color);
+.primary__btn1 {
+    background: linear-gradient(90deg, #004ff9,#fff94c);
     border: none;
     border-radius: 50px;
     padding: 0.7rem 2rem;

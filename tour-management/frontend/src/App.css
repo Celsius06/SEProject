@@ -8,6 +8,7 @@
   --text-color: #6e7074;
   --font-name: "Montserrat", sans-serif;
   --subtitle-font-name: "Island Moments", cursive;
+  --subtitle-font-name2: "Lobster", cursive;
 }
 
 * {
@@ -77,6 +78,22 @@ ul {
   background: var(--secondary-color);
   font-family: var(--subtitle-font-name);
   width: max-content;
+  padding: 0px 0.5rem;
+  padding-right: 1rem;
+
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--heading-color);
+}
+
+.section__subtitle-gradient {
+  
+  background: linear-gradient(90deg, #56CCF2, #2F80ED);
+  font-family: var(--subtitle-font-name2);
+  width: max-content;
+  height: max-content;
+  text-align: center;
   padding: 0px 0.5rem;
   padding-right: 1rem;
 
