@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Row, Button} from 'reactstrap'
 import {NavLink, Link} from 'react-router-dom';
 //import logo from './../../assets/images/logo.png'
-import logo from './../../assets/images/TAB.gif'
+import logo from './../../assets/images/TAB.gif';
 import './header.css'
 const nav_links = [
   {
