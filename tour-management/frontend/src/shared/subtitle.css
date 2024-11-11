@@ -1,0 +1,6 @@
+.subtitle-gradient {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Replace with desired gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Ensure it displays correctly */
+  }

@@ -1,0 +1,75 @@
+# Node.js modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore .cache files inside node_modules
+node_modules/.cache/
+
+# npm cache
+.npm/
+
+# yarn cache
+.yarn/cache/
+
+
+# Optional npm cache directory
+.npm
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Build directories
+dist/
+build/
+coverage/
+
+# TypeScript (optional for JavaScript/React projects)
+*.tsbuildinfo
+
+# React Native specific files
+.expo/
+web-build/
+
+# Testing files
+coverage/
+junit.xml
+test-results.xml
+*.snap
+
+# Babel
+.cache/
+
+# Parcel-bundler cache
+.cache/
+.parcel-cache/
+
+# ESLint
+.eslintcache
+
+# React-specific build artifacts
+public/static/
