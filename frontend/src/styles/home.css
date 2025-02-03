@@ -1,0 +1,149 @@
+
+
+.hero__subtitle img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+.hero__content h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--heading-color)
+}
+.hero__content h1 .highlight{
+    color: var(--secondary-color);
+    
+}
+
+.hero__description {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.custom-heading {
+    font-size: 3.75rem; 
+    font-weight: 700;   
+    line-height: 1.25;  
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; 
+    color: #2d3748;     
+}
+
+.text-gradient{
+    padding: relative;
+    z-index: 10;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #0066ff, #0033cc);
+    
+}
+.primary__btn1 {
+    background: linear-gradient(90deg, #004ff9,#fff94c);
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+.hero__img-box-container {
+    display: flex;
+    justify-content: space-between; /* Distributes the items evenly */
+    gap: 20px; /* Adds space between the items */
+}
+
+.hero__img-box img, .hero__img-box video{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    border: 1px solid var(--heading-color);
+    object-fit: cover;
+
+
+}
+.hero__content{
+    padding-top: 3.5rem;
+}
+
+.hero__img-box{
+    padding-top: 2rem;
+}
+
+.hotel__icon{
+    font-size: 50px;
+    color: #0033cc;
+    
+}
+
+.TAB__element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #60a5fa, #a78bfa); 
+    filter: blur(20px); 
+    opacity: 0.3;
+}
+.overlap__container{
+    position: relative;
+    z-index: 10;
+}
+
+  @media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .hero__content h1 {
+      font-size: 2.5rem; /* Adjust to a smaller size */
+    }
+    .hero__description {
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+
+    .custom-heading {
+        font-size: 2.55rem; 
+        font-weight: 770;   
+        line-height: 1.05;  
+        margin-top: 7rem;
+        margin-bottom: 1.2rem; 
+        color: #2d3748;     
+    }
+
+    .hero__img-box img, .hero__img-box video {
+      height: 250px; /* Reduce height for better fit */
+    }
+    .primary__btn1 {
+      font-size: 1rem; /* Slightly smaller font */
+      padding: 0.5rem 1.5rem;
+    }
+}
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .hero__content h1 {
+      font-size: 2rem; /* Smaller size for mobile */
+    }
+    .hero__img-box img, .hero__img-box video {
+      height: 200px; /* Further reduce height */
+    }
+    .hero__content {
+      padding-top: 2rem;
+    }
+
+    .custom-heading {
+        font-size: 1.55rem; 
+        font-weight: 730;   
+        line-height: 0.95;  
+        margin-bottom: 1rem; 
+        color: #2d3748;     
+    }
+    .primary__btn1 {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+}

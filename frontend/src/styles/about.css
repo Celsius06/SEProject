@@ -1,0 +1,235 @@
+/* Gradient Background */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 197, 253, 0.1) 100%);
+}
+
+/* Custom Background Pattern */
+.bg-pattern {
+  background-image: radial-gradient(circle at 1px 1px, #e5e7eb 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Team Member Card Styles */
+.team-member-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-member-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Team Member Image Container */
+.team-image-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-image-container div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-image-container:hover div {
+  transform: scale(1.1);
+}
+
+/* Stats Card Styles */
+.stats-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mission Section Styles */
+.mission-list {
+  list-style: none;
+}
+
+.mission-list-item {
+  transition: transform 0.3s ease;
+}
+
+.mission-list-item:hover {
+  transform: translateX(10px);
+}
+
+.mission-list-item::before {
+  content: '→';
+  color: #3b82f6;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.mission-list-item:hover::before {
+  transform: translateX(5px);
+}
+
+/* Stats Animation */
+.stat-number {
+  animation: countUp 2s ease-out forwards;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mission Image Overlay */
+.mission-image-overlay {
+  position: relative;
+}
+
+.mission-image-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+.about-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.5) transparent;
+}
+
+.about-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.about-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about-container::-webkit-scrollbar-thumb {
+  background-color: rgba(59, 130, 246, 0.5);
+  border-radius: 3px;
+}
+
+/* Responsive Text Styles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Padding Adjustments */
+.section-padding {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 641px) {
+  .section-padding {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .section-padding {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 4rem; /* Smaller size for mobile */
+  }
+}
+
+/* Video Section */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the whole area */
+}
+
+/* Core Values Section */
+.core-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* General Styles for the Combined Section */
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1; 
+  background-color: transparent; 
+  border-radius: 0; 
+  box-shadow: none; 
+}
+
+.bg-gray-50 {
+  background-color: transparent; 
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.rounded-lg {
+  border-radius: 1rem; 
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+  text-align: center; 
+}
+
+img {
+  max-width: 100%; 
+}
+
+.flex-wrap {
+  flex-wrap: wrap; 
+}
+
+.mx-2 {
+  margin-top: -1rem;
+  margin-left: 0.5rem; 
+  margin-right: 0.5rem; 
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+    height: auto; 
+    width: auto; 
+}
+
+.flex-wrap img {
+  height: 3rem; 
+  width: auto; 
+}
